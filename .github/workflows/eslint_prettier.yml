@@ -1,10 +1,7 @@
-name: ci
+name: ESLintPrettier
 
 on:
   push:
-    branches:
-      - main
-      - master
   pull_request:
     branches:
       - main
