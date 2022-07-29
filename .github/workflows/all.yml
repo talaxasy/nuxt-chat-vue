@@ -10,57 +10,23 @@ on:
 jobs:
   eslint:
     steps:
-      - name: Checkout 🛎
+      runs-on: ubuntu-latest
+
+      - name: ESLint
         uses: ./.github/workflows/eslint
 
   prettier:
     needs: eslint
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [14]
-
-    steps:
-      - name: Checkout 🛎
-        uses: actions/checkout@master
-
-      - name: Setup node env 🏗
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: ${{ matrix.node }}
-          check-latest: true
-
-      - name: Install dependencies 👨🏻‍💻
-        run: yarn
-
-      - name: Run Prettier 👀
-        run: yarn lint:prettier
+    - name: Prettier
+      uses: ./.github/workflows/prettier
 
   editorconfig:
     needs: [eslint, prettier]
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [14]
-
-    steps:
-      - name: Checkout 🛎
-        uses: actions/checkout@master
-
-      - name: Setup node env 🏗
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: ${{ matrix.node }}
-          check-latest: true
-
-      - name: Install dependencies 👨🏻‍💻
-        run: yarn
-
-      - name: Run Editorconfig 👀
-        run: yarn editorconfig
+    - name: EditorConfig
+      uses: ./.github/workflows/editorconfig
