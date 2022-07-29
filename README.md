@@ -1,3 +1,8 @@
+[![](https://github.com/talaxasy/nuxt-chat-vue/workflows/EditorConfig/badge.svg)](https://github.com/talaxasy/nuxt-chat-vue/actions?query=workflow%3AEditorConfig)
+[![](https://github.com/talaxasy/nuxt-chat-vue/workflows/ESLint/badge.svg)](https://github.com/talaxasy/nuxt-chat-vue/actions?query=workflow%3AESLint)
+[![](https://github.com/talaxasy/nuxt-chat-vue/workflows/Prettier/badge.svg)](https://github.com/talaxasy/nuxt-chat-vue/actions?query=workflow%3APrettier)
+[![](https://github.com/talaxasy/nuxt-chat-vue/workflows/All/badge.svg)](https://github.com/talaxasy/nuxt-chat-vue/actions?query=workflow%3AAll)
+
 # Simple chat on Vue
 
 ## Stack:
