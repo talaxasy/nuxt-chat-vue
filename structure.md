@@ -1,0 +1,10 @@
+- assets
+- components +
+- layouts +
+- middleware
+- pages +
+- plugins
+- static +
+- store +
+- types
+  - index.d.ts

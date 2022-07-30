@@ -3,7 +3,7 @@
 [![](https://github.com/talaxasy/nuxt-chat-vue/workflows/Prettier/badge.svg)](https://github.com/talaxasy/nuxt-chat-vue/actions?query=workflow%3APrettier)
 [![](https://github.com/talaxasy/nuxt-chat-vue/workflows/All/badge.svg)](https://github.com/talaxasy/nuxt-chat-vue/actions?query=workflow%3AAll)
 
-# Simple chat on Vue
+# Simple chat on Vue 2 on OptionalAPI (classic way)
 
 ## Stack:
 
